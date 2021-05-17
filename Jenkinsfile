@@ -3,7 +3,7 @@ pipeline {
     stages {
           stage('Get Start with eks master'){
           steps{
-            sh "aws eks --region us-east-1 update-kubeconfig --name jeno"
+            sh "aws eks --region eu-west-1 update-kubeconfig --name jeno"
             }
           }
           stage('Deploy deployment eks'){
