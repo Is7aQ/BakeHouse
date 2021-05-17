@@ -1,7 +1,7 @@
-pipeline { 
+peline { 
     environment { 
         registry = "is7aq/lap" 
-        registryCredential = 'is7aq' 
+        registryCredential = '1772ac8c-5089-4ab8-ba45-980aae019219' 
         dockerImage = '' 
     }
     agent any 
@@ -35,3 +35,4 @@ sh "docker rmi $registry:$BUILD_NUMBER"
 }
     }
     }
+
