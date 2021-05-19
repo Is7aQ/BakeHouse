@@ -24,7 +24,6 @@ pipeline {
              }
           stage('Set Kube Credentials') {
              steps{
-             withCredentials([file(credentialsId: 'kube-eks', variable: 'KUBECONFIG')]){
               sh "~/kubectl get deployments"
               }
              }        
