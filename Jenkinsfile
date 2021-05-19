@@ -18,7 +18,7 @@ pipeline {
           stage('Set Credentials') {
              steps{
              withAWS(credentials: 'nti_Isaac') {
-                 sh "aws eks --region us-east-1 update-kubeconfig --name jeno"
+                 sh "aws eks --region eu-west-1 update-kubeconfig --name jeno"
                }
               }
              }
