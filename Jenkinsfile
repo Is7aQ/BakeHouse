@@ -8,7 +8,7 @@ pipeline {
           }
           stage('Create Namespace prod'){
            steps{
-            sh "~/kubectl create namespace test"
+            sh "~/kubectl create namespace prod"
            }
          }
           stage('Deploy deployment eks'){
