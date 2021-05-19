@@ -8,12 +8,12 @@ pipeline {
           }
           stage('Deploy deployment eks'){
            steps{
-            sh "kubectl create -f deployment.yaml"
+            sh "~/bin/kubectl create -f deployment.yaml"
            }
          }
         stage('launch loadbalancer service'){
            steps{
-            sh "kubectl create -f service.yaml"
+            sh "~/bin/kubectl create -f service.yaml"
            }
          }
         }  
