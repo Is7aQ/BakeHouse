@@ -8,7 +8,7 @@ pipeline {
           }
           stage('Create Namespace dev'){
            steps{
-            sh "~/kubectl create namespace test"
+            sh "~/kubectl create namespace dev"
            }
          }
           stage('Deploy deployment eks'){
