@@ -44,10 +44,10 @@ pipeline {
                  sh "~/kubectl apply -f service.yaml -n dev"
                 }
                  else if(params.CHOICE == "test"){
-                 sh "kubectl create ns test"
+                 sh "~/kubectl create ns test"
                  sh "git checkout test"
-                 sh "kubectl apply -f deployment.yaml -n test"
-                 sh "kubectl apply -f service.yaml -n test"  
+                 sh "~/kubectl apply -f deployment.yaml -n test"
+                 sh "~/kubectl apply -f service.yaml -n test"  
                 }
               }  
             }
